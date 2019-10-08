@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+</head>
+<body>
+nhap vao so chu so trong day fibonaci can hien thi:
+<input id="num"><br/>
+<button onclick="appear()">click de hien thi</button>
+<script>
+    function appear() {
+        let num=parseInt(document.getElementById("num").value);
+        var a=1;
+        var b=1;
+        var c;
+        document.write(a+" "+b);
+        for (count=2; count<num;count++) {
+            c=a+b
+            a=b;
+            b=c
+            document.write(" "+c+" ");
+        }
+    }
+
+</script>
+</body>
+</html>

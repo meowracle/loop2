@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex05</title>
+</head>
+<body>
+<script>
+    let amount=parseInt(prompt("moi nhap vao so tien vay: "));
+    let interest=parseInt(prompt("moi nhap vao lai suat: "));
+    let duration=parseInt(prompt("moi nhap vao thoi han vay theo thang: "));
+    let payment=parseInt(amount*Math.pow((1+(interest/100)),duration));
+    alert("so tien phai tra la: "+payment);
+</script>
+</body>
+</html>
